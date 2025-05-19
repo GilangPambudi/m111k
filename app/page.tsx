@@ -6,18 +6,20 @@ import RouteSection from "@/components/sections/route-section"
 import ContactSection from "@/components/sections/contact-section"
 import GallerySection from "@/components/sections/gallery-section"
 import Footer from "@/components/footer"
+import LandingSection from "@/components/sections/landing-section"
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* <Header /> */}
+      <LandingSection />
+      {/* <Header />
       <HeroSection />
-      {/* <AboutSection />
+      <AboutSection />
       <TimelineSection />
       <RouteSection />
-      <ContactSection /> */}
-      {/* <GallerySection /> */}
-      {/* <Footer /> */}
+      <ContactSection />
+      <GallerySection />
+      <Footer /> */}
     </div>
   )
 }
