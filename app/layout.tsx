@@ -3,6 +3,9 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'M111K',
+  icons: {
+    icon: '/logo_m111.png',
+  },
 }
 
 export default function RootLayout({

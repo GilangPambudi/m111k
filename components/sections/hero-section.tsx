@@ -1,8 +1,36 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Pin } from "lucide-react"
 
 export default function HeroSection() {
+  const timelineItems = [
+    {
+      date: "25 Mei 2025",
+      description: "Pendaftaran Khusus Alumni M109K, M110K, dan JAMSELINAS",
+      icon: Pin,
+    },
+    {
+      date: "28 Mei 2025",
+      description: "Pendaftaran Umum",
+      icon: Pin,
+    },
+    {
+      date: "14 Juni 2025",
+      description: "Pendaftaran Ditutup",
+      icon: Pin,
+    },
+    {
+      date: "20 Juni 2025",
+      description: "Pengambilan Ridepack",
+      icon: Pin,
+    },
+    {
+      date: "21 Juni 2025",
+      description: "Official Ride",
+      icon: Pin,
+    },
+  ]
+
   return (
     <section id="home" className="relative pt-16 md:pt-24 overflow-hidden">
       <div className="w-full md:w-4/5 mx-auto px-4">
@@ -18,7 +46,7 @@ export default function HeroSection() {
               href="#register"
               className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-blue-900 transition-colors"
             >
-              Register Now
+              Daftar Sekarang
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>

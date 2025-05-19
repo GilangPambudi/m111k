@@ -4,7 +4,12 @@ export default function TimelineSection() {
   const timelineItems = [
     {
       date: "25 Mei 2025",
-      description: "Pendaftaran",
+      description: "Pendaftaran Khusus Alumni M109K, M110K, dan JAMSELINAS",
+      icon: Calendar,
+    },
+    {
+      date: "28 Mei 2025",
+      description: "Pendaftaran Umum",
       icon: Calendar,
     },
     {
@@ -13,12 +18,12 @@ export default function TimelineSection() {
       icon: Calendar,
     },
     {
-      date: "27 Juni 2025",
+      date: "20 Juni 2025",
       description: "Pengambilan Ridepack",
       icon: Calendar,
     },
     {
-      date: "28 Juni 2025",
+      date: "21 Juni 2025",
       description: "Official Ride",
       icon: Calendar,
     },
