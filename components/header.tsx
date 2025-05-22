@@ -75,6 +75,9 @@ export default function Header() {
       <div className="w-full md:w-4/5 mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link href="/#landing" className="flex items-center text-2xl font-bold text-primary">
+          <img src="/logo_nfb.png" alt="logo nfb"
+            className="h-16 w-16 mr-3 object-contain"
+          />
             <img
               src="/logo_m111.png"
               alt="M111 Logo"
