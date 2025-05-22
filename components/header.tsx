@@ -13,10 +13,10 @@ export default function Header() {
   const navItems = [
     { id: "landing", label: "Home" },
     // { id: "about", label: "About" },
-    // { id: "timeline", label: "Timeline" },
-    { id: "flow", label: "Alur Pendaftaran" },
-    // { id: "route", label: "Route" },
-    // { id: "contact", label: "Contact" },
+    { id: "timeline", label: "Timeline" },
+    { id: "flow", label: "Registration Steps" },
+    { id: "route", label: "Route" },
+    { id: "contact", label: "Contact" },
     // { id: "gallery", label: "Gallery" },
   ]
 

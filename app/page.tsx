@@ -15,10 +15,10 @@ export default function Home() {
       <Header />
       <LandingSection />
       {/* {/* <AboutSection /> */}
-      {/* <TimelineSection />  */}
+      <TimelineSection /> 
       <FlowSection />
-      {/* <RouteSection />
-      <ContactSection /> */}
+      <RouteSection />
+      <ContactSection />
       <Footer />
     </div>
   )
