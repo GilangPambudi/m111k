@@ -4,7 +4,7 @@ export default function TimelineSection() {
   const timelineItems = [
     {
       date: "24 - 27 Mei 2025",
-      description: "Pendaftaran Khusus Alumni M109K, M110K, dan JAMSELINAS",
+      description: "Pendaftaran Khusus M109 / M110 / Jamselinas Malang",
       icon: Mail,
     },
     {
