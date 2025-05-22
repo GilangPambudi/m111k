@@ -10,7 +10,7 @@ export default function ContactSection() {
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
             <div className="relative rounded-xl overflow-hidden max-w-md mx-auto md:max-w-none">
               <Image
-                src="hut_malang.png"
+                src="NFB_FEST.png"
                 alt="Contact Us"
                 width={600}
                 height={500}
