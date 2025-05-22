@@ -19,7 +19,7 @@ export default function ContactSection() {
             </div>
           </div>
           <div className="w-full md:w-1/2 md:pl-8 lg:pl-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 text-center md:text-left">Get In Touch</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 text-center md:text-left">Contact Person</h2>
             <p className="text-gray-600 mb-6 text-sm sm:text-base text-center md:text-left">
               Punya pertanyaan tentang M111? Tim kami siap membantu Anda dengan segala pertanyaan. Hubungi kami melalui WhatsApp untuk respon tercepat.
             </p>
@@ -42,7 +42,7 @@ export default function ContactSection() {
                 <span className="whitespace-nowrap">Chat on WhatsApp</span>
               </a>
 
-              <a
+              {/* <a
                 href="https://instagram.com/ngalamfoldingbike"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -50,7 +50,7 @@ export default function ContactSection() {
               >
                 <Instagram className="h-5 w-5 mr-2" />
                 <span className="whitespace-nowrap">Follow on Instagram</span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

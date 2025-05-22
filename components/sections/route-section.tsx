@@ -117,7 +117,7 @@ export default function RouteSection() {
         <div className="mt-12 text-center">
           <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
             <MapPin className="h-5 w-5 mr-2" />
-            <span className="font-medium">Total Distance: 50 km</span>
+            <span className="font-medium">Total Jarak: 50 km</span>
           </div>
         </div>
       </div>
