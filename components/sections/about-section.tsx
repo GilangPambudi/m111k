@@ -19,13 +19,13 @@ export default function AboutSection() {
           <div className="w-full md:w-1/2 md:pl-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About the Event</h2>
             <p className="text-gray-600 mb-4">
-              M111K merupakan acara sepeda yang diadakan di Malang, Jawa Timur, Indonesia. Acara ini bertujuan untuk merayakan event ini sebagai sarana mewujudkan kerjasama yang sinergis dan harmonis dengan perkumpulan-perkumpulan dan Komunitas sepeda, khususnya dengan perkumpulan dan Komunitas sepeda lipat yang ada di seluruh wilayah Republik Indonesia. 
+              M111 merupakan acara sepeda yang diadakan di Malang, Jawa Timur, Indonesia. Acara ini bertujuan untuk merayakan event ini sebagai sarana mewujudkan kerjasama yang sinergis dan harmonis dengan perkumpulan-perkumpulan dan Komunitas sepeda, khususnya dengan perkumpulan dan Komunitas sepeda lipat yang ada di seluruh wilayah Republik Indonesia. 
             </p>
             <p className="text-gray-600 mb-4">
-              M111K bukan sekadar ajang bersepeda, tetapi juga menjadi momentum silaturahmi antarpeserta dari berbagai daerah. Para penggemar sepeda lipat dapat saling mengenal, bertukar cerita, dan memperluas jaringan komunitas dalam suasana yang hangat dan penuh semangat kebersamaan.
+              M111 bukan sekadar ajang bersepeda, tetapi juga menjadi momentum silaturahmi antarpeserta dari berbagai daerah. Para penggemar sepeda lipat dapat saling mengenal, bertukar cerita, dan memperluas jaringan komunitas dalam suasana yang hangat dan penuh semangat kebersamaan.
             </p>
             <p className="text-gray-600">
-              Selain itu, M111K juga menjadi wadah untuk mempromosikan gaya hidup sehat, cinta lingkungan, serta mengenalkan keindahan kota Malang kepada peserta dari luar daerah. Dengan rute yang menantang namun menyenangkan, acara ini diharapkan menjadi pengalaman berkesan yang membawa dampak positif bagi seluruh peserta dan masyarakat sekitar.
+              Selain itu, M111 juga menjadi wadah untuk mempromosikan gaya hidup sehat, cinta lingkungan, serta mengenalkan keindahan kota Malang kepada peserta dari luar daerah. Dengan rute yang menantang namun menyenangkan, acara ini diharapkan menjadi pengalaman berkesan yang membawa dampak positif bagi seluruh peserta dan masyarakat sekitar.
             </p>
           </div>
         </div>

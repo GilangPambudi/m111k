@@ -9,7 +9,7 @@ export default function HeroSection() {
         <div className="flex flex-col-reverse md:flex-row items-center">
           <div className="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-              M111K – Malang 111th Anniversary Ride
+              M111 Family Reunion
             </h1>
             <p className="text-lg text-gray-600 mb-8">
               Bergabunglah bersama kami dalam pengalaman bersepeda tak terlupakan untuk merayakan HUT ke-111 Kota Malang. Jelajahi rute indah dan jadilah bagian dari sejarah.

@@ -1,31 +1,31 @@
-import { Calendar } from "lucide-react"
+import { Briefcase, CircleX, FileText, Bike, Mail } from "lucide-react"
 
 export default function TimelineSection() {
   const timelineItems = [
     {
       date: "25 Mei 2025",
       description: "Pendaftaran Khusus Alumni M109K, M110K, dan JAMSELINAS",
-      icon: Calendar,
+      icon: Mail,
     },
     {
       date: "28 Mei 2025",
       description: "Pendaftaran Umum",
-      icon: Calendar,
+      icon: FileText,
     },
     {
       date: "14 Juni 2025",
       description: "Pendaftaran Ditutup",
-      icon: Calendar,
+      icon: CircleX,
     },
     {
       date: "20 Juni 2025",
       description: "Pengambilan Ridepack",
-      icon: Calendar,
+      icon: Briefcase,
     },
     {
       date: "21 Juni 2025",
       description: "Official Ride",
-      icon: Calendar,
+      icon: Bike,
     },
   ]
 

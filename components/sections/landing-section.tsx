@@ -22,9 +22,10 @@ export default function LandingSection() {
             <p className="text-lg text-white mb-6">
               Bergabunglah bersama kami dalam pengalaman bersepeda tak terlupakan untuk merayakan HUT ke-111 Kota Malang. Jelajahi rute indah dan jadilah bagian dari sejarah.
             </p>
+            
             <Link
               href="#register"
-              className="inline-flex items-center px-8 py-3 rounded-full bg-white text-primary font-medium text-lg hover:bg-blue-600 transition-colors hover:text-white"
+              className="inline-flex items-center px-8 py-3 rounded-full bg-white text-primary font-medium text-lg hover:bg-primary transition-colors hover:text-white"
             >
               Daftar Sekarang!
               <ArrowRight className="ml-2 h-5 w-5" />
