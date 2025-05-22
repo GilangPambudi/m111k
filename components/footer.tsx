@@ -13,7 +13,7 @@ export default function Footer() {
             className="h-14 w-14 md:h-16 md:w-16 object-contain"
           />
           <p className="text-sm md:text-base font-bold text-center sm:text-left">
-            © 2025 M111 Event – All Rights Reserved
+            © 2025 Ngalam Folding Bike – All Rights Reserved
           </p>
         </div>
         
