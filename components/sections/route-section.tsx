@@ -39,15 +39,9 @@ export default function RouteSection() {
   return (
     <section id="route" className="py-16 md:py-24 bg-white">
       <div className="w-full md:w-5/6 mx-auto px-4 py-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">Route</h2>
-        <div className="mt-12 mb-10 text-center">
-          <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
-            <MapPin className="h-5 w-5 mr-2" />
-            <span className="font-medium">Total Jarak: 50 km</span>
-          </div>
-        </div>
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4 sm:mb-6">Route</h2>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="relative w-[90%] sm:w-[90%] md:w-5/6 mx-auto px-4 z-10">
           {/* Desktop: Layout Horizontal (hidden di mobile) */}
           <div className="hidden md:block relative">
             <div className="flex flex-row justify-between relative">
@@ -55,7 +49,7 @@ export default function RouteSection() {
                 <div className="w-1/2 px-2 relative" key={`desktop-${idx}`}>
                   {/* Horizontal line: only render between points */}
                   {idx < routeSteps.length - 1 && (
-                    <div 
+                    <div
                       className={`absolute top-[27px] h-1 ${getColorClass(step.color, "line")} z-0`}
                       style={{
                         left: 'calc(50% + 15px)',
@@ -137,6 +131,12 @@ export default function RouteSection() {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+        <div className="text-center">
+          <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full mt-6">
+            <MapPin className="h-5 w-5 mr-2" />
+            <span className="font-medium">Total Jarak: 50 km</span>
           </div>
         </div>
       </div>

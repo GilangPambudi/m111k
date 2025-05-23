@@ -65,8 +65,8 @@ export default function HeroSection() {
                 }`}
             />
 
-            <div className="relative w-full md:w-5/6 mx-auto px-4 z-10">
-                <div className="flex flex-col md:flex-row items-center">
+            <div className="relative sm:w-[90%] md:w-5/6 mx-auto px-4 z-10">
+                <div className="flex flex-col-reverse md:flex-row items-center">
 
                     {/* Kiri: Judul dan deskripsi */}
                     <div className="w-full md:w-1/2 mt-10 md:mt-0 md:pr-10">
