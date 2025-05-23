@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'M111 Family Reunion',
+  title: 'M111 The Reunion',
   icons: {
-    icon: '/logo_m111.png',
+    icon: '/logo-m111.png',
   },
 }
 
