@@ -12,7 +12,7 @@ export default function Header() {
   // Navigation items array for easier management
   const navItems = [
     { id: "home", label: "Home" },
-    // { id: "about", label: "About" },
+    { id: "about", label: "About" },
     { id: "timeline", label: "Timeline" },
     { id: "flow", label: "Registration Steps" },
     { id: "route", label: "Route" },
@@ -109,7 +109,7 @@ export default function Header() {
               <Link
                 href="/#register"
                 className={`ml-4 inline-flex items-center px-4 py-2 rounded-full ${isScrolled 
-                  ? "bg-primary text-white hover:bg-blue-600" 
+                  ? "bg-blue-600 text-white hover:bg-blue-900" 
                   : "bg-white text-primary hover:bg-blue-600 hover:text-white"} 
                   font-medium transition-colors`}
               >
@@ -126,8 +126,8 @@ export default function Header() {
               <Link
                 href="/#home"
                 className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm ${isScrolled 
-                  ? "bg-primary text-white" 
-                  : "bg-white text-primary"} 
+                  ? "bg-blue-600 text-white hover:bg-blue-900" 
+                  : "bg-white text-primary hover:bg-blue-600 hover:text-white"} 
                   font-medium transition-colors`}
               >
                 Daftar

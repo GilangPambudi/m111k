@@ -38,14 +38,14 @@ export default function HeroSection() {
 
     // Track if viewport is mobile size
     const [isMobile, setIsMobile] = React.useState(false)
-    
+
     // Define backgrounds for different device sizes
     const desktopBackgrounds = ["/landing-01.png", "/landing-02.png"]
     const mobileBackgrounds = ["/mobile-landing-01.png", "/mobile-landing-02.png"]
-    
+
     // Get the correct background array based on screen size
     const backgrounds = isMobile ? mobileBackgrounds : desktopBackgrounds
-    
+
     const [bgIndex, setBgIndex] = React.useState(0)
     const [slide, setSlide] = React.useState(false)
 
@@ -54,13 +54,13 @@ export default function HeroSection() {
         const checkMobile = () => {
             setIsMobile(window.innerWidth < 768) // 768px is md breakpoint in Tailwind
         }
-        
+
         // Initial check
         checkMobile()
-        
+
         // Add resize listener
         window.addEventListener('resize', checkMobile)
-        
+
         // Clean up
         return () => window.removeEventListener('resize', checkMobile)
     }, [])
@@ -80,7 +80,7 @@ export default function HeroSection() {
     const handleRegistrationClick = (e: React.MouseEvent) => {
         e.preventDefault()
         setShowAlert(true)
-        
+
         // Auto-hide alert after 5 seconds
         setTimeout(() => {
             setShowAlert(false)
@@ -92,16 +92,15 @@ export default function HeroSection() {
             id="home"
             className="relative sm:pt-8 md:pt-24 overflow-hidden min-h-screen bg-cover bg-center bg-no-repeat w-full flex items-center justify-center"
             style={{
-            backgroundImage: `url('${backgrounds[bgIndex]}')`,
-            transition: "background-image 0.5s linear"
+                backgroundImage: `url('${backgrounds[bgIndex]}')`,
+                transition: "background-image 0.5s linear"
             }}
         >
             {/* Overlay gelap */}
             <div className="absolute inset-0 bg-black/60 z-0 pointer-events-none" />
             <div
-                className={`absolute inset-0 pointer-events-none z-0 transition-transform duration-500 ${
-                    slide ? "-translate-x-full" : "translate-x-0"
-                }`}
+                className={`absolute inset-0 pointer-events-none z-0 transition-transform duration-500 ${slide ? "-translate-x-full" : "translate-x-0"
+                    }`}
             />
 
             {/* Alert Message */}
@@ -111,7 +110,7 @@ export default function HeroSection() {
                         className={`
                             bg-white/95 backdrop-blur-sm border-l-4 border-blue-600 rounded-lg shadow-lg p-4
                             flex items-start
-                            transition-transform transition-opacity duration-500 ease-out
+                            transition-opacity duration-500 ease-out
                             ${showAlert ? "translate-y-8 opacity-100" : "-translate-y-10 opacity-0"}
                             animate-slideDown
                         `}
@@ -164,7 +163,7 @@ export default function HeroSection() {
                         <div className="hidden md:flex justify-start mb-8">
                             <Link
                                 href="#"
-                                className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-blue-700 transition-colors"
+                                className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-white hover:text-primary transition-colors"
                                 onClick={handleRegistrationClick}
                             >
                                 Daftar Sekarang!
@@ -215,7 +214,7 @@ export default function HeroSection() {
                 <div className="flex md:hidden justify-center mt-10 mb-4">
                     <Link
                         href="#"
-                        className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-blue-700 transition-colors"
+                        className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-white hover:text-primary transition-colors"
                         onClick={handleRegistrationClick}
                     >
                         Daftar Sekarang!
