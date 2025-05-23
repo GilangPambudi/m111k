@@ -12,7 +12,7 @@ export default function Header() {
   // Navigation items array for easier management
   const navItems = [
     { id: "home", label: "Home" },
-    { id: "about", label: "About" },
+    // { id: "about", label: "About" },
     { id: "timeline", label: "Timeline" },
     { id: "flow", label: "Registration Steps" },
     { id: "route", label: "Route" },
