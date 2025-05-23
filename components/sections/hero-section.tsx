@@ -33,10 +33,34 @@ export default function HeroSection() {
 
     const countdown = useCountdown(new Date("2025-06-21T05:00:00+07:00"))
 
-    // Tambahan untuk background slider
-    const backgrounds = ["/landing-01.png", "/landing-02.png"]
+    // Track if viewport is mobile size
+    const [isMobile, setIsMobile] = React.useState(false)
+    
+    // Define backgrounds for different device sizes
+    const desktopBackgrounds = ["/landing-01.png", "/landing-02.png"]
+    const mobileBackgrounds = ["/mobile-landing-01.png", "/mobile-landing-02.png"]
+    
+    // Get the correct background array based on screen size
+    const backgrounds = isMobile ? mobileBackgrounds : desktopBackgrounds
+    
     const [bgIndex, setBgIndex] = React.useState(0)
     const [slide, setSlide] = React.useState(false)
+
+    // Check for mobile viewport on mount and resize
+    React.useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768) // 768px is md breakpoint in Tailwind
+        }
+        
+        // Initial check
+        checkMobile()
+        
+        // Add resize listener
+        window.addEventListener('resize', checkMobile)
+        
+        // Clean up
+        return () => window.removeEventListener('resize', checkMobile)
+    }, [])
 
     React.useEffect(() => {
         const interval = setInterval(() => {
@@ -47,12 +71,12 @@ export default function HeroSection() {
             }, 500) // durasi animasi slide (ms)
         }, 3000)
         return () => clearInterval(interval)
-    }, [])
+    }, [backgrounds.length])
 
     return (
         <section
             id="home"
-            className="relative pt-16 overflow-hidden min-h-screen bg-cover bg-center bg-no-repeat w-full flex items-center justify-center"
+            className="relative sm:pt-8 md:pt-24 overflow-hidden min-h-screen bg-cover bg-center bg-no-repeat w-full flex items-center justify-center"
             style={{
             backgroundImage: `url('${backgrounds[bgIndex]}')`,
             transition: "background-image 0.5s linear"
@@ -65,8 +89,8 @@ export default function HeroSection() {
                 }`}
             />
 
-            <div className="relative sm:w-[90%] md:w-5/6 mx-auto px-4 z-10">
-                <div className="flex flex-col-reverse md:flex-row items-center">
+            <div className="relative w-full md:w-5/6 mx-auto px-4 z-10">
+                <div className="flex flex-col md:flex-row items-center">
 
                     {/* Kiri: Judul dan deskripsi */}
                     <div className="w-full md:w-1/2 mt-10 md:mt-0 md:pr-10">
@@ -77,7 +101,8 @@ export default function HeroSection() {
                             M111 The Reunion adalah ajang spesial yang menyatukan semangat M109, M110, dan Jamselinas. Berlangsung di Malang yang sejuk, M111 hadir bukan sekadar event gowes, tapi juga momen nostalgia dan perayaan kebersamaan komunitas sepeda lipat dari seluruh Indonesia.
                         </p>
 
-                        <div className="flex justify-center md:justify-start">
+                        {/* Desktop button - hidden on mobile */}
+                        <div className="hidden md:flex justify-start mb-8">
                             <Link
                                 href="#register"
                                 className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-white transition-colors hover:text-primary"
@@ -89,7 +114,7 @@ export default function HeroSection() {
                     </div>
 
                     {/* Kanan: Countdown (lebih besar) */}
-                    <div className="w-full md:w-1/2 flex flex-col items-center md:items-center justify-center md:justify-end sm:mt-4">
+                    <div className="w-full md:w-1/2 flex flex-col items-center md:items-center justify-center md:justify-end ">
                         <div className="mb-3 md:mb-4 text-white text-xl md:text-3xl font-semibold text-center md:text-right">
                             Road to M111
                         </div>
@@ -125,6 +150,16 @@ export default function HeroSection() {
                             Save the Date | 21 Juni 2025
                         </div>
                     </div>
+                </div>
+                {/* Mobile button - shown only on mobile at bottom */}
+                <div className="flex md:hidden justify-center mt-10 mb-4">
+                    <Link
+                        href="#register"
+                        className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-white transition-colors hover:text-primary"
+                    >
+                        Daftar Sekarang!
+                        <ArrowRight className="ml-2 h-5 w-5" />
+                    </Link>
                 </div>
             </div>
         </section>
