@@ -93,11 +93,11 @@ export default function HeroSection() {
                 <div className="flex flex-col md:flex-row items-center">
 
                     {/* Kiri: Judul dan deskripsi */}
-                    <div className="w-full md:w-1/2 mt-10 md:mt-0 md:pr-10">
+                    <div className="w-full md:w-1/2 mt-10 md:mt-0 md:pr-10 ">
                         <h1 className="text-4xl md:text-7xl lg:text-7xl font-extrabold text-white mb-4 text-center md:text-left">
                             M111 The Reunion
                         </h1>
-                        <p className="text-base md:text-lg text-white mb-6 text-center md:text-left">
+                        <p className="text-base md:text-lg text-white mb-6 text-start md:text-left">
                             M111 The Reunion adalah ajang spesial yang menyatukan semangat M109, M110, dan Jamselinas. Berlangsung di Malang yang sejuk, M111 hadir bukan sekadar event gowes, tapi juga momen nostalgia dan perayaan kebersamaan komunitas sepeda lipat dari seluruh Indonesia.
                         </p>
 
