@@ -15,7 +15,7 @@ const routeSteps = [
     address: "Jl. Tugu No.1, Kiduldalem, Kec. Klojen, Kota Malang, Jawa Timur 65119",
     icon: Flag,
     color: "blue",
-    href: "https://g.co/kgs/1wQ5nQ",
+    href: "https://g.co/kgs/9VK5Arg",
   },
 ]
 
