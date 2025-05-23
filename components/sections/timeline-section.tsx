@@ -51,8 +51,8 @@ export default function TimelineSection() {
                     <div
                       className="absolute left-6 top-12 w-1 bg-blue-300"
                       style={{
-                        height: "calc(100% + 42px)",
-                        transform: 'translateX(-50%)',
+                        height: "calc(100% + 24px)",
+                        transform: 'translateX(-50%) translateY(20%)',
                         zIndex: 0,
                       }}
                       aria-hidden="true"

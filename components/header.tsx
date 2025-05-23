@@ -124,7 +124,7 @@ export default function Header() {
             {/* Mobile Register Button - only show when NOT in home section */}
             {activeSection !== "home" && (
               <Link
-                href="/#register"
+                href="/#home"
                 className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm ${isScrolled 
                   ? "bg-primary text-white" 
                   : "bg-white text-primary"} 

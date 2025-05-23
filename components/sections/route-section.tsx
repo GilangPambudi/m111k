@@ -102,6 +102,7 @@ export default function RouteSection() {
                         className={`absolute left-6 top-12 w-1 ${getColorClass(step.color, "line")}`}
                         style={{
                           height: '100%',
+                          transform: 'translateX(-50%)',
                           zIndex: 0,
                         }}
                         aria-hidden="true"
