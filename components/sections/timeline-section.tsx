@@ -21,15 +21,15 @@ export default function TimelineSection() {
     {
       date: "20 Juni 2025",
       description: "Pengambilan Ridepack",
-      location: "Location: The Shalimar Boutique Hotel Malang",
-      locationUrl: "https://goo.gl/maps/1v2Z5x8G7kz",
+      location: "Lokasi: The Shalimar Boutique Hotel Malang",
+      locationUrl: "https://g.co/kgs/sgHHNJf",
       icon: Briefcase,
     },
     {
       date: "21 Juni 2025",
       description: "Official Ride",
       location: "Start: The Shalimar Boutique Hotel Malang",
-      locationUrl: "https://goo.gl/maps/1v2Z5x8G7kz",
+      locationUrl: "https://g.co/kgs/sgHHNJf",
       icon: Bike,
     },
   ]
