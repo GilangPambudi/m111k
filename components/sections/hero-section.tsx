@@ -83,7 +83,7 @@ export default function HeroSection() {
             }}
         >
             {/* Overlay gelap */}
-            <div className="absolute inset-0 bg-black/40 z-0 pointer-events-none" />
+            <div className="absolute inset-0 bg-black/60 z-0 pointer-events-none" />
             <div
             className={`absolute inset-0 pointer-events-none z-0 transition-transform duration-500 ${slide ? "-translate-x-full" : "translate-x-0"
                 }`}
