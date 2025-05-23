@@ -1,17 +1,21 @@
-import { MapPin, Flag} from "lucide-react"
+import { MapPin, Flag } from "lucide-react"
 
 const routeSteps = [
   {
     title: "Start",
-    description: "Balaikota Malang",
+    description: "The Shalimar Boutique Hotel Malang",
+    address: "Jl. Cerme No.16, Oro-oro Dowo, Kec. Klojen, Kota Malang, Jawa Timur 65112",
     icon: MapPin,
     color: "blue",
+    href: "https://g.co/kgs/xyfummh",
   },
   {
     title: "Finish",
-    description: "Mini Block Office Malang",
+    description: "Balaikota Malang",
+    address: "Jl. Tugu No.1, Kiduldalem, Kec. Klojen, Kota Malang, Jawa Timur 65119",
     icon: Flag,
-    color: "green",
+    color: "blue",
+    href: "https://g.co/kgs/1wQ5nQ",
   },
 ]
 
@@ -34,11 +38,14 @@ const getColorClass = (color: string, type: string) => {
 export default function RouteSection() {
   return (
     <section id="route" className="py-16 md:py-24 bg-white">
-      <div className="w-full md:w-4/5 mx-auto px-4 py-4">
+      <div className="w-full md:w-5/6 mx-auto px-4 py-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">Route</h2>
-        <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-          No challenge, just ride!
-        </p>
+        <div className="mt-12 mb-10 text-center">
+          <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+            <MapPin className="h-5 w-5 mr-2" />
+            <span className="font-medium">Total Jarak: 50 km</span>
+          </div>
+        </div>
 
         <div className="max-w-4xl mx-auto">
           {/* Desktop: Layout Horizontal (hidden di mobile) */}
@@ -65,12 +72,23 @@ export default function RouteSection() {
                     </div>
                     <div className={`${getColorClass(step.color, "bgLight")} p-5 rounded-lg shadow-sm w-full`}>
                       <h3
-                        className={`text-xl font-bold ${getColorClass(step.color, "text")} text-center`}
+                        className={`text-2xl font-bold ${getColorClass(step.color, "text")} text-center`}
                       >
                         {step.title}
                       </h3>
-                      <div className="mt-3 text-gray-700 font-medium text-center">
+                      <div className="mt-3 text-gray-700 font-medium text-center text-lg">
                         {step.description}
+                      </div>
+                      {/* Address & Link */}
+                      <div className="mt-2 text-center">
+                        <a
+                          href={step.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 text-base block"
+                        >
+                          {step.address}
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -106,18 +124,19 @@ export default function RouteSection() {
                     <div className={`ml-6 ${getColorClass(step.color, "bgLight")} p-4 rounded-lg shadow-sm flex-grow`}>
                       <h3 className={`text-lg font-bold ${getColorClass(step.color, "text")}`}>{step.title}</h3>
                       <p className="text-gray-600">{step.description}</p>
+                      <a
+                        href={step.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 text-sm block"
+                      >
+                        {step.address}
+                      </a>
                     </div>
                   </li>
                 ))}
               </ul>
             </div>
-          </div>
-        </div>
-
-        <div className="mt-12 text-center">
-          <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
-            <MapPin className="h-5 w-5 mr-2" />
-            <span className="font-medium">Total Jarak: 50 km</span>
           </div>
         </div>
       </div>

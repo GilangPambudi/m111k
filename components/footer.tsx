@@ -4,21 +4,17 @@ import { Phone, Mail, Instagram, Twitter } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="py-4 md:py-6 bg-blue-900 text-white">
-      <div className="w-full md:w-4/5 mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="w-full md:w-5/6 mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
         {/* Logo and Copyright */}
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
-          <div className="flex items-center gap-2 bg-white rounded-lg">
-            <img src="/logo_nfb.png" alt="logo nfb"
+          <img src="/logo-nfb.png" alt="logo nfb"
               className="h-14 w-14 md:h-16 md:w-16 object-contain"
             />
-          </div>
-          <div className="flex items-center gap-2 bg-white rounded-lg">
-            <img
-            src="/logo_m111.png"
+          <img
+            src="/logo-m111-white.png"
             alt="M111 Logo"
             className="h-14 w-14 md:h-16 md:w-16 object-contain"
           />
-          </div>
           <p className="text-sm md:text-base font-bold text-center sm:text-left">
             © 2025 Ngalam Folding Bike – All Rights Reserved
           </p>

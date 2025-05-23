@@ -7,11 +7,11 @@ import { Menu, X, ArrowRight } from "lucide-react" // Added ArrowRight import
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState("landing")
+  const [activeSection, setActiveSection] = useState("home")
 
   // Navigation items array for easier management
   const navItems = [
-    { id: "landing", label: "Home" },
+    { id: "home", label: "Home" },
     // { id: "about", label: "About" },
     { id: "timeline", label: "Timeline" },
     { id: "flow", label: "Registration Steps" },
@@ -72,10 +72,10 @@ export default function Header() {
         : `${isMenuOpen ? "py-8" : "py-5"} md:py-5 bg-transparent`
         }`}
     >
-      <div className="w-full md:w-4/5 mx-auto px-4">
+      <div className="w-full md:w-5/6 mx-auto px-4">
         <div className="flex justify-between items-center">
-          <Link href="/#landing" className="flex items-center text-2xl font-bold text-primary">
-          <img src="/logo_nfb.png" alt="logo nfb"
+          <Link href="/#home" className="flex items-center text-2xl font-bold text-white">
+          <img src="/logo-nfb.png" alt="logo nfb"
             className="h-16 w-16 mr-3 object-contain"
           />
             <img
@@ -91,21 +91,21 @@ export default function Header() {
               <Link
                 key={item.id}
                 href={`/#${item.id}`}
-                className={`font-medium transition-colors ${activeSection === "landing"
+                className={`font-medium transition-colors ${activeSection === "home"
                   ? activeSection === item.id
-                    ? "text-white border-b-2 border-white"
-                    : "text-gray-200"
+                    ? "text-gray-200 border-b-2 border-white"
+                    : "text-gray-400"
                   : activeSection === item.id
                     ? "text-secondary border-b-2 border-secondary"
-                    : "text-gray-800 hover:text-secondary"
+                    : "text-gray-600 hover:text-secondary"
                   }`}
               >
                 {item.label}
               </Link>
             ))}
             
-            {/* Register Button - only show when NOT in landing section */}
-            {activeSection !== "landing" && (
+            {/* Register Button - only show when NOT in home section */}
+            {activeSection !== "home" && (
               <Link
                 href="/#register"
                 className={`ml-4 inline-flex items-center px-4 py-2 rounded-full ${isScrolled 
@@ -135,7 +135,7 @@ export default function Header() {
                 <Link
                   key={item.id}
                   href={`/#${item.id}`}
-                  className={`font-medium ${activeSection === "landing"
+                  className={`font-medium ${activeSection === "home"
                       ? activeSection === item.id
                         ? "text-blue-600"
                         : "text-gray-600"
@@ -149,8 +149,8 @@ export default function Header() {
                 </Link>
               ))}
               
-              {/* Register Button for Mobile - only show when NOT in landing section */}
-              {activeSection !== "landing" && (
+              {/* Register Button for Mobile - only show when NOT in home section */}
+              {activeSection !== "home" && (
                 <Link
                   href="/#register"
                   className="inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-full font-medium"
