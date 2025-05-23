@@ -106,19 +106,45 @@ export default function HeroSection() {
 
             {/* Alert Message */}
             {showAlert && (
-                <div className="fixed top-20 left-1/2 transform -translate-x-1/2 z-50 w-11/12 max-w-md">
-                    <div className="bg-white/95 backdrop-blur-sm border-l-4 border-blue-600 rounded-lg shadow-lg p-4 animate-fadeIn flex items-start">
+                <div className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 w-11/12 max-w-md">
+                    <div
+                        className={`
+                            bg-white/95 backdrop-blur-sm border-l-4 border-blue-600 rounded-lg shadow-lg p-4
+                            flex items-start
+                            transition-transform transition-opacity duration-500 ease-out
+                            ${showAlert ? "translate-y-8 opacity-100" : "-translate-y-10 opacity-0"}
+                            animate-slideDown
+                        `}
+                        style={{
+                            pointerEvents: "auto"
+                        }}
+                    >
                         <div className="flex-grow">
                             <h3 className="font-bold text-blue-900 mb-1">Informasi Pendaftaran</h3>
                             <p className="text-blue-800">Pendaftaran dibuka 24 Mei 2025 pukul 19.00</p>
                         </div>
-                        <button 
+                        <button
                             onClick={() => setShowAlert(false)}
                             className="text-gray-500 hover:text-gray-700 transition-colors"
                         >
                             <X size={20} />
                         </button>
                     </div>
+                    <style jsx>{`
+                        @keyframes slideDown {
+                            from {
+                                transform: translateY(-40px);
+                                opacity: 0;
+                            }
+                            to {
+                                transform: translateY(32px);
+                                opacity: 1;
+                            }
+                        }
+                        .animate-slideDown {
+                            animation: slideDown 0.5s cubic-bezier(0.4,0,0.2,1);
+                        }
+                    `}</style>
                 </div>
             )}
 
