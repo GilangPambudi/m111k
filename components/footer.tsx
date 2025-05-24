@@ -4,7 +4,7 @@ import { Phone, Mail, Instagram, Twitter } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="py-6 sm:py-8 bg-blue-900 text-white">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="w-[90%] md:w-[90%] mx-auto px-4">
         <div className="flex flex-col space-y-4 sm:space-y-6 md:space-y-0 md:flex-row md:items-center md:justify-between">
           {/* Logo and Copyright */}
           <div className="flex flex-col items-center space-y-3 sm:flex-row sm:space-y-0 sm:space-x-3">
