@@ -14,7 +14,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Header />
       <HeroSection />
-      {/* {/* <AboutSection /> */}
+      <AboutSection />
       <TimelineSection /> 
       <FlowSection />
       <RouteSection />

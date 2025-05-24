@@ -23,7 +23,7 @@ const routeSteps = [
 const getColorClass = (color: string, type: string) => {
   if (color === "blue") {
     if (type === "bg") return "bg-blue-500";
-    if (type === "bgLight") return "bg-blue-50";
+    if (type === "bgLight") return "bg-blue-200";
     if (type === "text") return "text-blue-800";
     if (type === "line") return "bg-blue-300";
   } else if (color === "green") {
@@ -37,7 +37,7 @@ const getColorClass = (color: string, type: string) => {
 
 export default function RouteSection() {
   return (
-    <section id="route" className="py-24 md:py-24 bg-white">
+    <section id="route" className="py-24 md:py-24 bg-slate-100">
       <div className="relative w-[90%] sm:w-[90%] md:w-5/6 mx-auto px-4 z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4 sm:mb-6">Route</h2>
         <div className="max-w-4xl mx-auto">
@@ -78,7 +78,7 @@ export default function RouteSection() {
                           href={step.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-600 text-base block"
+                          className="text-blue-600 text-base block hover:underline"
                         >
                           {step.address}
                         </a>
@@ -134,7 +134,7 @@ export default function RouteSection() {
           </div>
         </div>
         <div className="text-center">
-          <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full mt-6">
+          <div className="inline-flex items-center bg-blue-200 text-blue-800 px-4 py-2 rounded-full mt-6">
             <MapPin className="h-5 w-5 mr-2" />
             <span className="font-medium">Total Jarak: 50 km</span>
           </div>
