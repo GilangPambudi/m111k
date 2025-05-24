@@ -99,7 +99,6 @@ export default function Header() {
                     ? "text-secondary border-b-2 border-secondary"
                     : "text-gray-600 hover:text-secondary"
                   }`}
-                target="_blank"
               >
                 {item.label}
               </Link>
