@@ -74,7 +74,7 @@ export default function Header() {
     >
       <div className="w-[90%] md:w-[90%] mx-auto px-4">
         <div className="flex justify-between items-center">
-          <Link href="/#home" className="flex items-center text-2xl font-bold text-white">
+          <Link href="#home" className="flex items-center text-2xl font-bold text-white" >
             <img src="/logo-nfb.png" alt="logo nfb"
               className="h-16 w-16 mr-3 object-contain"
             />
@@ -99,19 +99,21 @@ export default function Header() {
                     ? "text-secondary border-b-2 border-secondary"
                     : "text-gray-600 hover:text-secondary"
                   }`}
+                target="_blank"
               >
                 {item.label}
               </Link>
             ))}
-            
+
             {/* Register Button - only show when NOT in home section */}
             {activeSection !== "home" && (
               <Link
-                href="/#register"
-                className={`ml-4 inline-flex items-center px-4 py-2 rounded-full ${isScrolled 
-                  ? "bg-blue-600 text-white hover:bg-blue-900" 
+                href="https://daftar.ngalamfoldingbike.id/events/m111-reunion"
+                className={`ml-4 inline-flex items-center px-4 py-2 rounded-full ${isScrolled
+                  ? "bg-blue-600 text-white hover:bg-blue-900"
                   : "bg-white text-primary hover:bg-blue-600 hover:text-white"} 
                   font-medium transition-colors`}
+                target="_blank"
               >
                 Daftar Sekarang
                 <ArrowRight className="ml-1 h-4 w-4" />
@@ -124,11 +126,12 @@ export default function Header() {
             {/* Mobile Register Button - only show when NOT in home section */}
             {activeSection !== "home" && (
               <Link
-                href="/#home"
-                className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm ${isScrolled 
-                  ? "bg-blue-600 text-white hover:bg-blue-900" 
+                href="https://daftar.ngalamfoldingbike.id/events/m111-reunion"
+                className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm ${isScrolled
+                  ? "bg-blue-600 text-white hover:bg-blue-900"
                   : "bg-white text-primary hover:bg-blue-600 hover:text-white"} 
                   font-medium transition-colors`}
+                target="_blank"
               >
                 Daftar
                 <ArrowRight className="ml-1 h-3 w-3" />
@@ -151,12 +154,12 @@ export default function Header() {
                   key={item.id}
                   href={`/#${item.id}`}
                   className={`font-medium ${activeSection === "home"
-                      ? activeSection === item.id
-                        ? "text-blue-600"
-                        : "text-gray-600"
-                      : activeSection === item.id
-                        ? "text-blue-600"
-                        : "text-gray-800"
+                    ? activeSection === item.id
+                      ? "text-blue-600"
+                      : "text-gray-600"
+                    : activeSection === item.id
+                      ? "text-blue-600"
+                      : "text-gray-800"
                     }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
