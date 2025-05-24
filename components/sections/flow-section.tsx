@@ -26,8 +26,8 @@ export default function FlowSection() {
   ]
 
   return (
-    <section id="flow" className="py-24 md:py-24 bg-white">
-      <div className="relative w-[90%] sm:w-[90%] md:w-5/6 mx-auto px-4 z-10">
+    <section id="flow" className="py-24 md:py-32 bg-white">
+      <div className="relative w-[90%] sm:w-[90%] md:w-[90%] mx-auto px-4 z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4 sm:mb-6">Registration Steps</h2>
         <div className="relative max-w-2xl mx-auto flex">
           <div className="relative w-full">

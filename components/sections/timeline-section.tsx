@@ -35,8 +35,8 @@ export default function TimelineSection() {
   ]
 
   return (
-    <section id="timeline" className="py-24 md:py-24 bg-slate-100">
-      <div className="relative w-[90%] sm:w-[90%] md:w-5/6 mx-auto px-4 z-10">
+    <section id="timeline" className="py-24 md:py-32 bg-slate-100">
+      <div className="relative w-[90%] sm:w-[90%] md:w-[90%] mx-auto px-4 z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4 sm:mb-6">Timeline</h2>
         <div className="relative max-w-2xl mx-auto flex">
           <div className="relative w-full">

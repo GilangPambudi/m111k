@@ -147,7 +147,7 @@ export default function HeroSection() {
                 </div>
             )}
 
-            <div className="relative w-full md:w-5/6 mx-auto px-4 z-10">
+            <div className="relative w-full md:w-[90%] mx-auto px-4 z-10">
                 <div className="flex flex-col md:flex-row items-center">
 
                     {/* Kiri: Judul dan deskripsi */}

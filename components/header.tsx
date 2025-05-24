@@ -72,7 +72,7 @@ export default function Header() {
         : `${isMenuOpen ? "py-8" : "py-5"} md:py-5 bg-transparent`
         }`}
     >
-      <div className="w-full md:w-5/6 mx-auto px-4">
+      <div className="w-[90%] md:w-[90%] mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link href="/#home" className="flex items-center text-2xl font-bold text-white">
             <img src="/logo-nfb.png" alt="logo nfb"

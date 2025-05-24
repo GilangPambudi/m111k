@@ -4,8 +4,8 @@ import Link from "next/link"
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-24 md:py-24 bg-white">
-      <div className="relative w-[90%] sm:w-[90%] md:w-5/6 mx-auto px-4 z-10">
+    <section id="contact" className="py-24 md:py-32 bg-white">
+      <div className="relative w-[90%] sm:w-[90%] md:w-[90%] mx-auto px-4 z-10">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
             <div className="relative rounded-xl overflow-hidden max-w-md mx-auto md:max-w-none">

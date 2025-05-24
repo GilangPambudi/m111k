@@ -24,7 +24,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="pt-32 pb-16 md:pt-32 md:pb-24 bg-white">
-      <div className="relative w-[90%] sm:w-[90%] md:w-5/6 mx-auto px-4 z-10">
+      <div className="relative w-[90%] sm:w-[90%] md:w-[90%] mx-auto px-4 z-10">
       <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
         <div className="w-full md:w-1/2 mb-8 md:mb-0">
         <div className="relative rounded-xl overflow-hidden max-w-md mx-auto md:max-w-none" style={{ aspectRatio: "16/9" }}>
