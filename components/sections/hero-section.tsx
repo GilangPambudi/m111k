@@ -147,7 +147,7 @@ export default function HeroSection() {
                         {/* Desktop button - hidden on mobile */}
                         <div className="hidden md:flex justify-start mb-8">
                             <Link
-                                href="#"
+                                href="#home"
                                 className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-blue-700 transition-colors"
                             >
                                 Daftar Sekarang!
@@ -197,7 +197,7 @@ export default function HeroSection() {
                 {/* Mobile button - shown only on mobile at bottom */}
                 <div className="flex md:hidden justify-center mt-10 mb-4">
                     <Link
-                        href="#"
+                        href="#home"
                         className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-white hover:text-primary transition-colors"
                         target="_blank" rel="noopener noreferrer"
                     >
