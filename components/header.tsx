@@ -107,7 +107,7 @@ export default function Header() {
             {/* Register Button - only show when NOT in home section */}
             {activeSection !== "home" && (
               <Link
-                href="#"
+                href="#home"
                 className={`ml-4 inline-flex items-center px-4 py-2 rounded-full ${isScrolled
                   ? "bg-blue-600 text-white hover:bg-blue-900"
                   : "bg-white text-primary hover:bg-blue-600 hover:text-white"} 
@@ -125,7 +125,7 @@ export default function Header() {
             {/* Mobile Register Button - only show when NOT in home section */}
             {activeSection !== "home" && (
               <Link
-                href="#"
+                href="#home"
                 className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm ${isScrolled
                   ? "bg-blue-600 text-white hover:bg-blue-900"
                   : "bg-white text-primary hover:bg-blue-600 hover:text-white"} 
