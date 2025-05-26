@@ -149,7 +149,6 @@ export default function HeroSection() {
                             <Link
                                 href="#"
                                 className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-blue-700 transition-colors"
-                                onClick={handleRegistrationClick}
                             >
                                 Daftar Sekarang!
                                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -201,7 +200,6 @@ export default function HeroSection() {
                         href="#"
                         className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-white hover:text-primary transition-colors"
                         target="_blank" rel="noopener noreferrer"
-                        onClick={handleRegistrationClick}
                     >
                         Daftar Sekarang!
                         <ArrowRight className="ml-2 h-5 w-5" />
