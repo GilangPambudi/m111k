@@ -5,6 +5,7 @@ import { ArrowRight, X } from "lucide-react"
 import React from "react"
 import Countdown from "react-countdown"
 import Swal from "sweetalert2"
+import { sectionsData } from "./sectionsData"
 
 function useCountdown(targetDate: Date) {
     const [timeLeft, setTimeLeft] = React.useState(() => {

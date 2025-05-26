@@ -1,8 +1,21 @@
+import {
+  MapPin,
+  Flag,
+  FileText,
+  Briefcase,
+  Bike,
+  Globe,
+  CreditCard,
+  Mail,
+  Contact,
+} from "lucide-react";
+
 export const sectionsData = {
+
   hero: {
     title: "M111 The Reunion",
     paragraphs: [
-        "M111 The Reunion adalah ajang spesial yang menyatukan semangat M109, M110, dan Jamselinas XIII Malang. Berlangsung di Malang yang sejuk, M111 hadir bukan sekadar event gowes, tapi juga momen nostalgia dan perayaan kebersamaan komunitas sepeda lipat dari seluruh Indonesia."
+      "M111 The Reunion adalah ajang spesial yang menyatukan semangat M109, M110, dan Jamselinas XIII Malang. Berlangsung di Malang yang sejuk, M111 hadir bukan sekadar event gowes, tapi juga momen nostalgia dan perayaan kebersamaan komunitas sepeda lipat dari seluruh Indonesia.",
     ],
     buttonText: "Daftar Sekarang!",
     buttonLink: "#registration",
@@ -20,6 +33,7 @@ export const sectionsData = {
       "/slide-02.png?height=360&width=640",
     ],
   },
+
   timeline: [
     {
       date: "24 - 27 Mei 2025",
@@ -47,6 +61,7 @@ export const sectionsData = {
       icon: "Bike",
     },
   ],
+
   flow: [
     {
       title: "Kunjungi Landing Page",
@@ -72,13 +87,14 @@ export const sectionsData = {
       icon: "Mail",
     },
   ],
+
   route: [
     {
       title: "Start",
       description: "The Shalimar Boutique Hotel Malang",
       address:
         "Jl. Cerme No.16, Oro-oro Dowo, Kec. Klojen, Kota Malang, Jawa Timur 65112",
-      icon: "MapPin",
+      icon: MapPin, // ⬅️ Diubah dari string jadi komponen
       color: "blue",
       href: "https://g.co/kgs/xyfummh",
     },
@@ -87,9 +103,14 @@ export const sectionsData = {
       description: "Balaikota Malang",
       address:
         "Jl. Tugu No.1, Kiduldalem, Kec. Klojen, Kota Malang, Jawa Timur 65119",
-      icon: "Flag",
+      icon: Flag, // ⬅️ Diubah juga
       color: "blue",
       href: "https://g.co/kgs/9VK5Arg",
     },
   ],
+  
+  contact: {
+    title: "Contact Us",
+    description: "Punya pertanyaan tentang M111? Tim kami siap membantu Anda dengan segala pertanyaan. Hubungi kami melalui WhatsApp untuk respon tercepat.",
+  },
 };

@@ -1,41 +1,25 @@
 import { MapPin, Flag } from "lucide-react"
-
-const routeSteps = [
-  {
-    title: "Start",
-    description: "The Shalimar Boutique Hotel Malang",
-    address: "Jl. Cerme No.16, Oro-oro Dowo, Kec. Klojen, Kota Malang, Jawa Timur 65112",
-    icon: MapPin,
-    color: "blue",
-    href: "https://g.co/kgs/xyfummh",
-  },
-  {
-    title: "Finish",
-    description: "Balaikota Malang",
-    address: "Jl. Tugu No.1, Kiduldalem, Kec. Klojen, Kota Malang, Jawa Timur 65119",
-    icon: Flag,
-    color: "blue",
-    href: "https://g.co/kgs/9VK5Arg",
-  },
-]
+import { sectionsData } from "./sectionsData"
 
 // Helper function untuk warna
 const getColorClass = (color: string, type: string) => {
   if (color === "blue") {
-    if (type === "bg") return "bg-blue-500";
-    if (type === "bgLight") return "bg-blue-200";
-    if (type === "text") return "text-blue-800";
-    if (type === "line") return "bg-blue-300";
+    if (type === "bg") return "bg-blue-500"
+    if (type === "bgLight") return "bg-blue-200"
+    if (type === "text") return "text-blue-800"
+    if (type === "line") return "bg-blue-300"
   } else if (color === "green") {
-    if (type === "bg") return "bg-green-500";
-    if (type === "bgLight") return "bg-green-50";
-    if (type === "text") return "text-green-800";
-    if (type === "line") return "bg-green-300";
+    if (type === "bg") return "bg-green-500"
+    if (type === "bgLight") return "bg-green-50"
+    if (type === "text") return "text-green-800"
+    if (type === "line") return "bg-green-300"
   }
-  return "";
-};
+  return ""
+}
 
 export default function RouteSection() {
+  const routeSteps = sectionsData.route
+
   return (
     <section id="route" className="py-24 md:py-32 bg-slate-100">
       <div className="relative w-[90%] sm:w-[90%] md:w-[90%] mx-auto px-4 z-10">
@@ -51,8 +35,8 @@ export default function RouteSection() {
                     <div
                       className={`absolute top-[27px] h-1 ${getColorClass(step.color, "line")} z-0`}
                       style={{
-                        left: 'calc(50% + 15px)',
-                        right: 'calc(-50% + 15px)',
+                        left: "calc(50% + 15px)",
+                        right: "calc(-50% + 15px)",
                       }}
                       aria-hidden="true"
                     />
@@ -101,8 +85,8 @@ export default function RouteSection() {
                       <div
                         className={`absolute left-6 top-12 w-1 ${getColorClass(step.color, "line")}`}
                         style={{
-                          height: '100%',
-                          transform: 'translateX(-50%)',
+                          height: "100%",
+                          transform: "translateX(-50%)",
                           zIndex: 0,
                         }}
                         aria-hidden="true"

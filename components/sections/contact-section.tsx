@@ -1,6 +1,9 @@
 import Image from "next/image"
 import { Phone, Mail, Instagram } from "lucide-react"
 import Link from "next/link"
+import { sectionsData } from "./sectionsData"
+
+const { title, description } = sectionsData.contact
 
 export default function ContactSection() {
   return (
@@ -10,7 +13,7 @@ export default function ContactSection() {
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
             <div className="relative rounded-xl overflow-hidden max-w-md mx-auto md:max-w-none">
               <Image
-                src="logo-nfb.png"
+                src="/logo-nfb.png"
                 alt="Contact Us"
                 width={500}
                 height={400}
@@ -20,12 +23,11 @@ export default function ContactSection() {
           </div>
           <div className="w-full md:w-1/2 md:pl-8 lg:pl-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 text-center md:text-left">
-              Contact Person
+              {title}
             </h2>
             <p className="text-gray-600 mb-6 text-base text-center md:text-left">
-              Punya pertanyaan tentang M111? Tim kami siap membantu Anda dengan segala pertanyaan. Hubungi kami melalui WhatsApp untuk respon tercepat.
+              {description}
             </p>
-
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-4 mt-4 items-center md:items-start">
               <a
                 href="https://wa.me/6281325490097"
