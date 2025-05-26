@@ -199,7 +199,7 @@ export default function HeroSection() {
                     <Link
                         href="#home"
                         className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-white hover:text-primary transition-colors"
-                        target="_blank" rel="noopener noreferrer"
+                        // target="_blank" rel="noopener noreferrer"
                     >
                         Daftar Sekarang!
                         <ArrowRight className="ml-2 h-5 w-5" />
