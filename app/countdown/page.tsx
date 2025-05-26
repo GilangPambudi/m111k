@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useEffect, useRef, useState } from "react";
 import Confetti from "react-confetti";
@@ -25,7 +27,7 @@ function useCountdown(targetDate: Date) {
 }
 
 export default function CountdownPage() {
-  const target = new Date(2025, 4, 24, 20, 0, 0);
+  const target = new Date(2025, 4, 28, 19, 0, 0);
   const countdown = useCountdown(target);
   const [windowSize, setWindowSize] = useState({ width: 1920, height: 1080 });
 
@@ -86,6 +88,18 @@ export default function CountdownPage() {
         )}
         {!isCountdownDone ? (
           <div className="flex gap-4 md:gap-8 mb-8">
+             <Card className="bg-white/90 shadow-lg">
+              <CardHeader>
+                <CardTitle className="text-blue-900 text-3xl md:text-5xl font-extrabold">
+                  {String(countdown.days).padStart(2, "0")}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <span className="text-base md:text-lg font-normal mt-1">
+                  Hari
+                </span>
+              </CardContent>
+            </Card>
             <Card className="bg-white/90 shadow-lg">
               <CardHeader>
                 <CardTitle className="text-blue-900 text-3xl md:text-5xl font-extrabold">
