@@ -112,7 +112,7 @@ export default function Header() {
                   ? "bg-blue-600 text-white hover:bg-blue-900"
                   : "bg-white text-primary hover:bg-blue-600 hover:text-white"} 
                   font-medium transition-colors`}
-                target="_blank"
+                // target="_blank"
               >
                 Daftar Sekarang
                 <ArrowRight className="ml-1 h-4 w-4" />
@@ -130,7 +130,7 @@ export default function Header() {
                   ? "bg-blue-600 text-white hover:bg-blue-900"
                   : "bg-white text-primary hover:bg-blue-600 hover:text-white"} 
                   font-medium transition-colors`}
-                target="_blank"
+                // target="_blank"
               >
                 Daftar
                 <ArrowRight className="ml-1 h-3 w-3" />
