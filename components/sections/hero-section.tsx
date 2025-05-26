@@ -4,6 +4,7 @@ import Link from "next/link"
 import { ArrowRight, X } from "lucide-react"
 import React from "react"
 import Countdown from "react-countdown"
+import Swal from "sweetalert2"
 
 function useCountdown(targetDate: Date) {
     const [timeLeft, setTimeLeft] = React.useState(() => {
@@ -30,9 +31,6 @@ function useCountdown(targetDate: Date) {
 export default function HeroSection() {
     const [mounted, setMounted] = React.useState(false)
     React.useEffect(() => setMounted(true), [])
-
-    // Alert state
-    const [showAlert, setShowAlert] = React.useState(false)
 
     const countdown = useCountdown(new Date("2025-06-21T05:00:00+07:00"))
 
@@ -79,12 +77,15 @@ export default function HeroSection() {
     // Function to handle registration button click
     const handleRegistrationClick = (e: React.MouseEvent) => {
         e.preventDefault()
-        setShowAlert(true)
 
-        // Auto-hide alert after 5 seconds
-        setTimeout(() => {
-            setShowAlert(false)
-        }, 5000)
+        // Show SweetAlert
+        Swal.fire({
+            title: "Informasi Pendaftaran",
+            text: "Periode pertama sold out, periode kedua akan dibuka pada 28 Mei 2025 pukul 19.00.",
+            icon: "info",
+            confirmButtonText: "OK",
+            confirmButtonColor: "#2563eb", // Tailwind's blue-600
+        })
     }
 
     return (
@@ -93,7 +94,7 @@ export default function HeroSection() {
             className="relative sm:pt-8 md:pt-24 overflow-hidden min-h-screen bg-cover bg-center bg-no-repeat w-full flex items-center justify-center"
             style={{
                 backgroundImage: `url('${backgrounds[bgIndex]}')`,
-                transition: "background-image 0.5s linear"
+                transition: "background-image 0.5s linear",
             }}
         >
             {/* Overlay gelap */}
@@ -102,35 +103,6 @@ export default function HeroSection() {
                 className={`absolute inset-0 pointer-events-none z-0 transition-transform duration-500 ${slide ? "-translate-x-full" : "translate-x-0"
                     }`}
             />
-
-            {/* Alert Message */}
-            {showAlert && (
-                <div className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 w-11/12 max-w-md">
-                    <div
-                        className={`
-                            bg-white/95 backdrop-blur-sm border-l-4 border-blue-600 rounded-lg shadow-lg p-4
-                            flex items-start
-                            transition-transform transition-opacity duration-500 ease-out
-                            ${showAlert ? "translate-y-8 opacity-100" : "-translate-y-10 opacity-0"}
-                            animate-slideDown
-                        `}
-                        style={{
-                            pointerEvents: "auto"
-                        }}
-                    >
-                        <div className="flex-grow">
-                            <h3 className="font-bold text-blue-900 mb-1">Informasi Pendaftaran</h3>
-                            <p className="text-blue-800">Kuota telah penuh, terima kasih atas antusiasme Anda. </p>
-                        </div>
-                        <button
-                            onClick={() => setShowAlert(false)}
-                            className="text-gray-500 hover:text-gray-700 transition-colors"
-                        >
-                            <X size={20} />
-                        </button>
-                    </div>
-                </div>
-            )}
 
             <div className="relative w-full md:w-[90%] mx-auto px-4 z-10">
                 <div className="flex flex-col md:flex-row items-center">
@@ -147,8 +119,9 @@ export default function HeroSection() {
                         {/* Desktop button - hidden on mobile */}
                         <div className="hidden md:flex justify-start mb-8">
                             <Link
-                                href="#home"
+                                href="#"
                                 className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-blue-700 transition-colors"
+                                onClick={handleRegistrationClick}
                             >
                                 Daftar Sekarang!
                                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -197,9 +170,10 @@ export default function HeroSection() {
                 {/* Mobile button - shown only on mobile at bottom */}
                 <div className="flex md:hidden justify-center mt-10 mb-4">
                     <Link
-                        href="#home"
+                        href="#"
                         className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-white hover:text-primary transition-colors"
                         // target="_blank" rel="noopener noreferrer"
+                        onClick={handleRegistrationClick}
                     >
                         Daftar Sekarang!
                         <ArrowRight className="ml-2 h-5 w-5" />
