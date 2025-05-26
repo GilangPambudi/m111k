@@ -81,7 +81,9 @@ export default function HeroSection() {
         // Show SweetAlert
         Swal.fire({
             title: "Informasi Pendaftaran",
-            text: "Periode pertama sold out, periode kedua akan dibuka pada 28 Mei 2025 pukul 19.00.",
+            html: `<p>Terimakasih kepada 300 pencita sepeda lipat yang telah mendaftar event M111 pada periode pertama.</p>
+            <br>
+               <p>Selanjutnya akan dibuka pemesanan tiket M111 untuk umum pada periode kedua tanggal <strong>28 Mei 2025 Pukul 19.00 WIB.</strong></p>`,
             icon: "info",
             confirmButtonText: "OK",
             confirmButtonColor: "#2563eb", // Tailwind's blue-600
