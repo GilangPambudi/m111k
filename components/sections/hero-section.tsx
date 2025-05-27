@@ -17,7 +17,7 @@ function useCountdown(targetDate: Date) {
         const interval = setInterval(() => {
             const diff = targetDate.getTime() - new Date().getTime()
             setTimeLeft(diff > 0 ? diff : 0)
-        }, 1000)
+        }, 200) // interval lebih sering
         return () => clearInterval(interval)
     }, [targetDate])
 
