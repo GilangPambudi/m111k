@@ -96,7 +96,7 @@ export const sectionsData = {
         "Jl. Cerme No.16, Oro-oro Dowo, Kec. Klojen, Kota Malang, Jawa Timur 65112",
       icon: MapPin, // ⬅️ Diubah dari string jadi komponen
       color: "blue",
-      href: "https://g.co/kgs/xyfummh",
+      href: "https://maps.app.goo.gl/PKo85JPdkYibEo8h6",
     },
     {
       title: "Finish",
@@ -105,7 +105,7 @@ export const sectionsData = {
         "Jl. Tugu No.1, Kiduldalem, Kec. Klojen, Kota Malang, Jawa Timur 65119",
       icon: Flag, // ⬅️ Diubah juga
       color: "blue",
-      href: "https://g.co/kgs/9VK5Arg",
+      href: "https://maps.app.goo.gl/Cwz7QnZe8Fp6K1iBA",
     },
   ],
   
