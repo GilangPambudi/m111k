@@ -30,6 +30,8 @@ function useCountdown(targetDate: Date) {
 }
 
 export default function HeroSection() {
+    const { title, paragraphs, buttonText, buttonLink, buttonIcon } = sectionsData.hero
+
     const [mounted, setMounted] = React.useState(false)
     React.useEffect(() => setMounted(true), [])
 
@@ -113,18 +115,18 @@ export default function HeroSection() {
                     {/* Kiri: Judul dan deskripsi */}
                     <div className="w-full md:w-1/2 mt-10 md:mt-0 md:pr-10 ">
                         <h1 className="text-4xl md:text-7xl lg:text-7xl font-extrabold text-white mb-4 text-center md:text-left">
-                            M111 The Reunion
+                            {title}
                         </h1>
                         <p className="text-base md:text-lg text-white mb-6 text-start md:text-left">
-                            M111 The Reunion adalah ajang spesial yang menyatukan semangat M109, M110, dan Jamselinas XIII Malang. Berlangsung di Malang yang sejuk, M111 hadir bukan sekadar event gowes, tapi juga momen nostalgia dan perayaan kebersamaan komunitas sepeda lipat dari seluruh Indonesia.
+                            {paragraphs}
                         </p>
 
                         {/* Desktop button - hidden on mobile */}
                         <div className="hidden md:flex justify-start mb-8">
                             <Link
-                                href="#"
+                                href={buttonLink}
                                 className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-blue-700 transition-colors"
-                                onClick={handleRegistrationClick}
+                                target="_blank" rel="noopener noreferrer"
                             >
                                 Daftar Sekarang!
                                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -173,10 +175,9 @@ export default function HeroSection() {
                 {/* Mobile button - shown only on mobile at bottom */}
                 <div className="flex md:hidden justify-center mt-10 mb-4">
                     <Link
-                        href="#"
+                        href={buttonLink}
                         className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-white hover:text-primary transition-colors"
-                        // target="_blank" rel="noopener noreferrer"
-                        onClick={handleRegistrationClick}
+                        target="_blank" rel="noopener noreferrer"
                     >
                         Daftar Sekarang!
                         <ArrowRight className="ml-2 h-5 w-5" />

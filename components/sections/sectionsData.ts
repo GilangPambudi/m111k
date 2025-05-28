@@ -18,7 +18,7 @@ export const sectionsData = {
       "M111 The Reunion adalah ajang spesial yang menyatukan semangat M109, M110, dan Jamselinas XIII Malang. Berlangsung di Malang yang sejuk, M111 hadir bukan sekadar event gowes, tapi juga momen nostalgia dan perayaan kebersamaan komunitas sepeda lipat dari seluruh Indonesia.",
     ],
     buttonText: "Daftar Sekarang!",
-    buttonLink: "#registration",
+    buttonLink: "https://daftar.ngalamfoldingbike.id/events/m111-reunion",
     buttonIcon: "ArrowRight",
   },
 
