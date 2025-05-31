@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowRight, X } from "lucide-react"
+import { ArrowDown, X } from "lucide-react"
 import React from "react"
 import Countdown from "react-countdown"
 import Swal from "sweetalert2"
@@ -84,9 +84,7 @@ export default function HeroSection() {
         // Show SweetAlert
         Swal.fire({
             title: "Informasi Pendaftaran",
-            html: `<p>Terimakasih kepada 300 pencita sepeda lipat yang telah mendaftar event M111 pada periode pertama.</p>
-            <br>
-               <p>Selanjutnya akan dibuka pemesanan tiket M111 untuk umum pada periode kedua tanggal <strong>28 Mei 2025 Pukul 19.00 WIB.</strong></p>`,
+            html: `<p>Terimakasih kepada seluruh pendaftar event M111.</p>`,
             icon: "info",
             confirmButtonText: "OK",
             confirmButtonColor: "#2563eb", // Tailwind's blue-600
@@ -126,10 +124,10 @@ export default function HeroSection() {
                             <Link
                                 href={buttonLink}
                                 className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-blue-700 transition-colors"
-                                target="_blank" rel="noopener noreferrer"
+                                // target="_blank" rel="noopener noreferrer"
                             >
-                                Daftar Sekarang!
-                                <ArrowRight className="ml-2 h-5 w-5" />
+                                Cek Timeline
+                                <ArrowDown className="ml-2 h-5 w-5" />
                             </Link>
                         </div>
                     </div>
@@ -172,17 +170,19 @@ export default function HeroSection() {
                         </div>
                     </div>
                 </div>
+
                 {/* Mobile button - shown only on mobile at bottom */}
                 <div className="flex md:hidden justify-center mt-10 mb-4">
                     <Link
                         href={buttonLink}
                         className="inline-flex items-center px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-lg hover:bg-white hover:text-primary transition-colors"
-                        target="_blank" rel="noopener noreferrer"
+                        // target="_blank" rel="noopener noreferrer"
                     >
-                        Daftar Sekarang!
-                        <ArrowRight className="ml-2 h-5 w-5" />
+                        Cek Timeline
+                        <ArrowDown className="ml-2 h-5 w-5" />
                     </Link>
                 </div>
+                
             </div>
         </section>
     )

@@ -105,7 +105,7 @@ export default function Header() {
             ))}
 
             {/* Register Button - only show when NOT in home section */}
-            {activeSection !== "home" && (
+            {/* {activeSection !== "home" && (
               <Link
                 href="#home"
                 className={`ml-4 inline-flex items-center px-4 py-2 rounded-full ${isScrolled
@@ -117,13 +117,15 @@ export default function Header() {
                 Daftar Sekarang
                 <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
-            )}
+            )} */}
+
           </nav>
 
           {/* Mobile Register Button and Menu Button */}
           <div className="md:hidden flex items-center space-x-2">
+
             {/* Mobile Register Button - only show when NOT in home section */}
-            {activeSection !== "home" && (
+            {/* {activeSection !== "home" && (
               <Link
                 href="#home"
                 className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm ${isScrolled
@@ -135,7 +137,8 @@ export default function Header() {
                 Daftar
                 <ArrowRight className="ml-1 h-3 w-3" />
               </Link>
-            )}
+            )} */}
+
             <button className="text-gray-800" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
