@@ -8,17 +8,18 @@ import GallerySection from "@/components/sections/gallery-section"
 import Footer from "@/components/footer"
 import LandingSection from "@/components/sections/landing-section"
 import FlowSection from "@/components/sections/flow-section"
+import ThanksSection from "@/components/sections/thanks-section"
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
-      <HeroSection />
-      <AboutSection />
+      {/* <Header /> */}
+      <ThanksSection />
+      {/* <AboutSection />
       <TimelineSection /> 
       <FlowSection />
       <RouteSection />
-      <ContactSection />
+      <ContactSection /> */}
       
       <Footer />
     </div>
