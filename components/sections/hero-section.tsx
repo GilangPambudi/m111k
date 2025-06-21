@@ -163,7 +163,7 @@ export default function HeroSection() {
                                 </div>
                             </div>
                         ) : (
-                            <div className="text-white font-bold text-2xl md:text-3xl text-center">Waktu telah berakhir!</div>
+                            <div className="text-white font-bold text-2xl md:text-3xl text-center">Official Ride M111!</div>
                         )}
                         <div className="mt-4 text-white text-lg md:text-xl font-semibold text-center">
                             Save the Date | 21 Juni 2025

@@ -13,13 +13,13 @@ import ThanksSection from "@/components/sections/thanks-section"
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* <Header /> */}
-      <ThanksSection />
-      {/* <AboutSection />
+      <Header />
+      <HeroSection />
+      <AboutSection />
       <TimelineSection /> 
       <FlowSection />
       <RouteSection />
-      <ContactSection /> */}
+      <ContactSection />
       
       <Footer />
     </div>
