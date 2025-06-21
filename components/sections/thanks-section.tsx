@@ -14,7 +14,7 @@ export default function ThanksSection() {
         // Show SweetAlert
         Swal.fire({
             title: "Informasi",
-            html: `<p>Terimakasih kepada seluruh pendaftar event M111. Sampai jumpa di M112!</p>`,
+            html: `<p>Terimakasih kepada seluruh peserta event M111. Sampai jumpa di M112!</p>`,
             icon: "info",
             confirmButtonText: "OK",
             confirmButtonColor: "#2563eb", // Tailwind's blue-600
